@@ -12,7 +12,7 @@
  *@prin_fun: pointer to flag
  */
 
-tydef struct prnt
+typedef struct prnt
 {
 	char flag;
 	void (*prin_fun)();
