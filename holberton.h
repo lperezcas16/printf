@@ -6,14 +6,15 @@
 #include <unistd.h>
 
 /**
-* struct prnt - struct 
-* @flag: Binary Opytion
-* @prin_fun: pointer to flag
-*/
+ *struct prnt - struct
+ *
+ *@flag: Binary Opytion
+ *@prin_fun: pointer to flag
+ */
 
 tydef struct prnt
 {
-         char flag;
-         void (*prin_fun)();
+	char flag;
+	void (*prin_fun)();
 } print;
 #endif
