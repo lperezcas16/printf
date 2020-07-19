@@ -15,7 +15,7 @@
 typedef struct prnt
 {
 	char flag;
-	void (*prin_fun)();
+	char* (*prin_fun)(va_list);
 } print;
 int _printf(const char *format, ...);
 char *return_binary(va_list, int n);
