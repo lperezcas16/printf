@@ -47,7 +47,7 @@ char *return_binary(int n)
 	while (number > 0)
 	{
 		new_space[i] = number % base + 48;
-		numer /= base;
+		number /= base;
 		++i;
 	}
 	for (j = i - 1; j >= 0; j--, k++)

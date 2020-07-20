@@ -14,21 +14,12 @@ int _printf(const char *format, ...)
 	int i, j, Cmatch, m, final_c = 0;
 	print match[] = {
 		{'c', print_char},
-<<<<<<< HEAD
-		//{'s', print_string},
-		//{'d', print_integer},
-		//{'i', print_integer},
-		//{'o', print_octal},
-		//{'h', print_hexa},
-		//{'b', print_binary},
-=======
 		/**{'s', print_string},
 		{'d', print_int},
 		{'i', print_int},
 		{'o', print_octal},
 		{'h', print_hexa},
 		{'b', print_binary},*/
->>>>>>> master
 		{'\0', NULL}
 	};
 	va_start(args, format);
@@ -36,15 +27,9 @@ int _printf(const char *format, ...)
 	if (buffer == NULL)
 	{
 		free(buffer);
-<<<<<<< HEAD
-		return;
+		//return;
 	}
 	for (i = 0; format[i] != '\0'; i++)
-=======
-		return (0);
-	}
-	for (i = 0; format[i] != 0; i++)
->>>>>>> master
 	{
 		for (Cmatch = 0; match[Cmatch].flag != '\0'; Cmatch++)
 		{
@@ -66,9 +51,5 @@ int _printf(const char *format, ...)
 	write(1, buffer, 1024);
 	va_end(args);
 	free(buffer);
-<<<<<<< HEAD
-	return ();
-=======
-	return (strlen(buffer));
->>>>>>> master
+	return (final_c);
 }
