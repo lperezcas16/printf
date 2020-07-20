@@ -14,12 +14,12 @@ int _printf(const char *format, ...)
 	int i, j, Cmatch;
 	print match[] = {
 		{'c', print_char},
-		{'s', print_string},
+		/**{'s', print_string},
 		{'d', print_int},
 		{'i', print_int},
 		{'o', print_octal},
 		{'h', print_hexa},
-		{'b', print_binary},
+		{'b', print_binary},*/
 		{'\0', NULL}
 	};
 	va_start(args, format);
