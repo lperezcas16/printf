@@ -10,15 +10,15 @@ int _printf(const char *format, ...)
 {
 	char *buffer = NULL;
 	va_list args;
-	int i, j, Cmatch;
+	int i, j, Cmatch, m, final_c = 0;
 	print match[] = {
 		{'c', print_char},
-		{'s', print_string},
-		{'d', print_integer},
-		{'i', print_integer},
-		{'o', print_octal},
-		{'h', print_hexa},
-		{'b', print_binary},
+		//{'s', print_string},
+		//{'d', print_integer},
+		//{'i', print_integer},
+		//{'o', print_octal},
+		//{'h', print_hexa},
+		//{'b', print_binary},
 		{'\0', NULL}
 	};
 	va_start(args, format);
@@ -26,14 +26,18 @@ int _printf(const char *format, ...)
 	if (buffer == NULL)
 	{
 		free(buffer);
-		return (NULL);
+		return;
 	}
-	for (i = 0; format[i] != NULL; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		for (Cmatch = 0; match[Cmatch].flag != '\0'; Cmatch++)
 		{
 			if (format[i] == '%' && format[i + 1] == match[Cmatch].flag)
 			{
+				for (m = 0; match[m].flag; m++, final_c++)
+				{
+					buffer[m] = match[m].flag;
+				}
 				break;
 			}
 		}
@@ -46,5 +50,5 @@ int _printf(const char *format, ...)
 	write(1, buffer, 1024);
 	va_end(args);
 	free(buffer);
-	return (buffer);
+	return (final_c);
 }
