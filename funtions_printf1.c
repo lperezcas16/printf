@@ -31,7 +31,7 @@ char *return_octal(int n)
 		++i;
 	}
 	a = malloc(sizeof(char) * (i + 1));
-	new_space = mallos(sizeof(char) * (i + 1));
+	new_space = malloc(sizeof(char) * (i + 1));
 	if (!new_space || !a)
 	{
 		free(a);
@@ -41,7 +41,7 @@ char *return_octal(int n)
 	i = 0, k = 0, number = n;
 	while (number > 0)
 	{
-		a[i] = number & base + 48;
+		a[i] = number & (base + 48);
 		number /= base;
 		++i;
 	}

@@ -78,8 +78,8 @@ char *print_Hexa(va_list a)
 */
 char *return_Hexa(int n)
 {
-	int decimalNumber, quotient;
-	int i = 0, j, temp;
+	int quotient;
+	int i = 0, temp;
 	char *hexadecimalNumber = malloc(sizeof(char) * (i + 2));
 
 	quotient = n;
