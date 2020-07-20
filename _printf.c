@@ -50,5 +50,5 @@ int _printf(const char *format, ...)
 	write(1, buffer, 1024);
 	va_end(args);
 	free(buffer);
-	return (final_c);
+	return ();
 }
