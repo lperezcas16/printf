@@ -10,7 +10,7 @@ char *print_char(va_list a)
 *@n: integer
 *Return: Char
 */
-/*
+
 char *return_binary(int n)
 {
 	char *new_space, *copy_a;
@@ -49,16 +49,52 @@ char *return_binary(int n)
 	copy_a[k] = '\0';
 	return (copy_a);
 }
-char *print_char(va_list a){}
-char *print_string(va_list a){}
-char *return_integer(int n){}
-char *print_integer2(va_list, int count, int n){}
-char *print_int(va_list a){}
-char *print_binary(va_list a){}
-char *print_hexa(va_list a){}
-char *return_hexa(int n){}
-char *print_Hexa(va_list a){}
-char *return_Hexa(int n){}
-char *print_octal(va_list a){}
-char *return_octal(int n){}*/
+char *print_char(va_list a)
+{
+
+}
+char *print_string(va_list a)
+{
+
+}
+char *return_integer(int n)
+{
+
+}
+char *print_integer2(va_list, int count, int n)
+{
+
+}
+char *print_int(va_list a)
+{
+
+}
+char *print_binary(va_list a)
+{
+
+}
+char *print_hexa(va_list a)
+{
+
+}
+char *return_hexa(int n)
+{
+
+}
+char *print_Hexa(va_list a)
+{
+
+}
+char *return_Hexa(int n)
+{
+
+}
+char *print_octal(va_list a)
+{
+
+}
+char *return_octal(int n)
+{
+	
+}
 
