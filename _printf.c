@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <string.h>
 /**
  * _printf - produces output according to a format
  * @format: format string containing the characters and the specifiers
@@ -13,12 +14,12 @@ int _printf(const char *format, ...)
 	int i, j, Cmatch;
 	print match[] = {
 		{'c', print_char},
-		{'s', print_string},
-		{'d', print_integer},
-		{'i', print_integer},
+		/**{'s', print_string},
+		{'d', print_int},
+		{'i', print_int},
 		{'o', print_octal},
 		{'h', print_hexa},
-		{'b', print_binary},
+		{'b', print_binary},*/
 		{'\0', NULL}
 	};
 	va_start(args, format);
@@ -26,9 +27,9 @@ int _printf(const char *format, ...)
 	if (buffer == NULL)
 	{
 		free(buffer);
-		return (NULL);
+		return (0);
 	}
-	for (i = 0; format[i] != NULL; i++)
+	for (i = 0; format[i] != 0; i++)
 	{
 		for (Cmatch = 0; match[Cmatch].flag != '\0'; Cmatch++)
 		{
@@ -46,5 +47,5 @@ int _printf(const char *format, ...)
 	write(1, buffer, 1024);
 	va_end(args);
 	free(buffer);
-	return (buffer);
+	return (strlen(buffer));
 }
