@@ -26,8 +26,3 @@ char *print_string(va_list a)
 	x = va_arg(a, char *);
 	return (x);
 }
-/**
- * print_int - prints integer
- * @a: type of format to print
- * Return: integer
- */
