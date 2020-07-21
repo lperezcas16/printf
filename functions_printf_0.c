@@ -58,7 +58,7 @@ char *return_binary(int n)
 	return (copy_a);
 }
 /**
-*print_Hexa - Print the hexadecimal
+*print_hexa - Print the hexadecimal
 *
 *@a: The list
 *
@@ -71,7 +71,7 @@ char *print_hexa(va_list a)
 	return (ptn);
 }
 /**
-*return_Hexa - convert a decimal in to hexadecimal
+*return_hexa - convert a decimal in to hexadecimal
 *@n: integer to convert
 *
 *Return: the hexadecimal
