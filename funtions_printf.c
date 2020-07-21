@@ -64,7 +64,7 @@ char *return_binary(int n)
 *
 *Return: the pointer
 */
-char *print_Hexa(va_list a)
+char *print_hexa(va_list a)
 {
 	char *ptn = return_hexa(va_arg(a, int));
 
@@ -76,7 +76,7 @@ char *print_Hexa(va_list a)
 *
 *Return: the hexadecimal
 */
-char *return_Hexa(int n)
+char *return_hexa(int n)
 {
 	int quotient;
 	int i = 0, temp;

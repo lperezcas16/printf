@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			{
 				for (m = 0; match[m].flag; m++, final_c++)
 				{
-					buffer[m] = match[m].flag;
+					buffer[final_c] = match[m].flag;
 				}
 				break;
 			}
