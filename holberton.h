@@ -9,8 +9,8 @@
 /**
  *struct prnt - struct
  *
- *@flag: Binary Opytion
- *@prin_fun: pointer to flag
+ *@flag:  Option
+ *@prin_fun: Pointer to flag
  */
 
 typedef struct prnt

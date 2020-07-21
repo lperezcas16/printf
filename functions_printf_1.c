@@ -21,7 +21,7 @@ char *print_octal(va_list a)
 */
 char *return_octal(int n)
 {
-	char *a = NULL, *new_space = NULL;
+	char *ptn = NULL, *new_space = NULL;
 	int i = 0, j, k, base = 8;
 	int number = n;
 
@@ -30,24 +30,24 @@ char *return_octal(int n)
 		number /= base;
 		++i;
 	}
-	a = malloc(sizeof(char) * (i + 1));
+	ptn = malloc(sizeof(char) * (i + 1));
 	new_space = malloc(sizeof(char) * (i + 1));
-	if (!new_space || !a)
+	if (!new_space || !ptn)
 	{
-		free(a);
+		free(ptn);
 		free(new_space);
 		return (NULL);
 	}
 	i = 0, k = 0, number = n;
 	while (number > 0)
 	{
-		a[i] = number & (base + 48);
+		ptn[i] = number & (base + 48);
 		number /= base;
 		++i;
 	}
 	for (j = i - 1; j >= 0; j--, k++)
 	{
-		new_space[k] = a[j];
+		new_space[k] = ptn[j];
 	}
 	new_space[k] = '\0';
 	return (new_space);

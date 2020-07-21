@@ -21,7 +21,7 @@ char *print_binary(va_list a)
 */
 char *return_binary(int n)
 {
-	char *a, *copy_a;
+	char *a, *new_space;
 	int i = 0, j, k, base = 2;
 	int f = n;
 
@@ -32,15 +32,15 @@ char *return_binary(int n)
 	}
 	if (f == 0)
 	{
-		copy_a = "0";
-		return (copy_a);
+		new_space = "0";
+		return (new_space);
 	}
 	a = malloc(sizeof(char) * (i + 1));
-	copy_a = malloc(sizeof(char) * (i + 1));
-	if (!copy_a || !a)
+	new_space = malloc(sizeof(char) * (i + 1));
+	if (!new_space || !a)
 	{
 		free(a);
-		free(copy_a);
+		free(new_space);
 		return (NULL);
 	}
 	i = 0, k = 0, f = n;
@@ -52,10 +52,10 @@ char *return_binary(int n)
 	}
 	for (j = i - 1; j >= 0; j--, k++)
 	{
-		copy_a[k] = a[j];
+		new_space[k] = a[j];
 	}
-	copy_a[k] = '\0';
-	return (copy_a);
+	new_space[k] = '\0';
+	return (new_space);
 }
 /**
 *print_hexa - Print the hexadecimal
@@ -78,22 +78,36 @@ char *print_hexa(va_list a)
 */
 char *return_hexa(int n)
 {
-	int quotient;
-	int i = 0, temp;
-	char *hexadecimalNumber = malloc(sizeof(char) * (i + 2));
+	int quotient = n;
+	int i = 0, k = 0, j = 0, base = 16;
+	char *hexadecimal = NULL, *number = NULL;
 
-	quotient = n;
-
-	while (quotient != 0)
+	while (quotient > 0)
 	{
-
-	temp = quotient % 16;
-	/*To convert integer into character*/
-		(temp < 10) ? (temp = temp + 48) :
-				(temp = temp + 55);
-	hexadecimalNumber[i++] = temp;
-	quotient = quotient / 16;
+		quotient /= base;
+		++i;
 	}
-	hexadecimalNumber[i] = '\0';
-	return (hexadecimalNumber);
+	number = malloc(sizeof(char) * (1 + i));
+	hexadecimal = malloc(sizeof(char) * (i + 1));
+	if (!hexadecimal || !number)
+	{
+		free(number);
+		free(hexadecimal);
+		return (NULL);
+	}
+	i = 0, k = 0, quotient = n;
+	while (quotient > 0)
+	{
+		number[i] = quotient % base + 48;
+		if (quotient % base > 9)
+			number[i] = quotient % base + 48 + 39;
+		quotient /= base;
+		++i;
+	}
+	for (j = i - 1; j >= 0; j--, k++)
+	{
+		hexadecimal[k] = number[k];
+	}
+	hexadecimal[i] = '\0';
+	return (hexadecimal);
 }
