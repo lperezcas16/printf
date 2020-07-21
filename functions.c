@@ -31,9 +31,3 @@ char *print_string(va_list a)
  * @a: type of format to print
  * Return: integer
  */
-char *print_int(va_list a)
-{
-	char *x = return_integer(va_arg(a, int));
-
-	return (x);
-}
