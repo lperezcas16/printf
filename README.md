@@ -61,6 +61,7 @@ _printf("Numbers: [%i] [%d] [%u] ", 1, 2, 3);
 Output
 ```C
 Numbers: [1] [2] [3]
+```
 
 	
 
