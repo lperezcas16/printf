@@ -28,3 +28,29 @@ char *print_string(va_list a)
 		return ("(null)");
 	return (x);
 }
+/**
+ * print_int - print_string
+ * @a: to print
+ * Return: string
+ */
+char *print_int(va_list a)
+{
+	int i = va_arg(a, int);
+
+	if (i)
+		return (converToStrBase(i, 10));
+		return (NULL);
+}
+/**
+ * print_unsign_int - print_string
+ * @a: to print
+ * Return: string
+ */
+char *print_unsign_int(va_list a)
+{
+	int i = va_arg(a, int);
+
+	if (i)
+		return (converToStrBase(i, 10));
+	return (NULL);
+}
