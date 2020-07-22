@@ -53,12 +53,10 @@ char *converToStrBase(int number, unsigned int base)
 
 	if (!org)
 		return (NULL);
-
 	if (number == 0)
 		org[i] = '0', i++;
 	if (number < 0)
 	{
-		printf("%d hii", number);
 		number = number * -1;
 		negative = 1;
 	}
