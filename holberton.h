@@ -1,10 +1,9 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef _HOLBERTON_H
+#define _HOLBERTON_H
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 
 /**
  *struct prnt - struct

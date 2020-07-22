@@ -14,7 +14,7 @@ The code will be compiled this way:
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 ---
-## Usage 
+## Usage :mag_right:
 
 You can use the prototype:
 ```c
@@ -34,7 +34,7 @@ Flag   | Action
   %s  | Print a String
 
 ---
-## EXAMPLES 
+## EXAMPLES :floppy_disk:
 
 Char:
 ```C
@@ -68,8 +68,8 @@ Numbers: [1] [2] [3]
 ---
 
   ### Authors
-  * **Valeria Trujillo** - [valeria2426](https://github.com/valeria2426)
-  * **Laura Perez** - [Lperezcas16](https://github.com/lperezcas16)
+  * **Valeria Trujillo** - [valeria2426](https://github.com/valeria2426) :sunflower:
+  * **Laura Perez** - [Lperezcas16](https://github.com/lperezcas16) :cat:
 
 
 

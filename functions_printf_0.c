@@ -21,41 +21,41 @@ char *print_binary(va_list a)
 */
 char *return_binary(int n)
 {
-	char *a, *new_space;
+	char *str, *binary_number;
 	int i = 0, j, k, base = 2;
-	int f = n;
+	int number = n;
 
-	while (f > 0)
+	while (number > 0)
 	{
-		f /= base;
+		number /= base;
 		++i;
 	}
-	if (f == 0)
+	if (number == 0)
 	{
-		new_space = "0";
-		return (new_space);
+		binary_number = "0";
+		return (binary_number);
 	}
-	a = malloc(sizeof(char) * (i + 1));
-	new_space = malloc(sizeof(char) * (i + 1));
-	if (!new_space || !a)
+	str = malloc(sizeof(char) * (i + 1));
+	binary_number = malloc(sizeof(char) * (i + 1));
+	if (!binary_number || !str)
 	{
-		free(a);
-		free(new_space);
+		free(str);
+		free(binary_number);
 		return (NULL);
 	}
-	i = 0, k = 0, f = n;
-	while (f > 0)
+	i = 0, k = 0, number = n;
+	while (number > 0)
 	{
-		a[i] = f % base + 48;
-		f /= base;
+		str[i] = number % base + 48;
+		number /= base;
 		++i;
 	}
 	for (j = i - 1; j >= 0; j--, k++)
 	{
-		new_space[k] = a[j];
+		binary_number[k] = str[j];
 	}
-	new_space[k] = '\0';
-	return (new_space);
+	binary_number[k] = '\0';
+	return (binary_number);
 }
 /**
 *print_hexa - Print the hexadecimal
@@ -74,7 +74,7 @@ char *print_hexa(va_list a)
 *return_hexa - convert a decimal in to hexadecimal
 *@n: integer to convert
 *
-*Return: the hexadecimal
+*Return: the hexadecimal lower case
 */
 char *return_hexa(int n)
 {

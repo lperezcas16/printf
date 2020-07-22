@@ -8,7 +8,7 @@
 */
 char *print_Hexa(va_list a)
 {
-	char *ptn = return_hexa(va_arg(a, int));
+	char *ptn = return_Hexa(va_arg(a, int));
 
 	return (ptn);
 }
@@ -20,36 +20,36 @@ char *print_Hexa(va_list a)
 */
 char *return_Hexa(int n)
 {
-	int quotient = n;
-	int i = 0, k = 0, j = 0, base = 16;
-	char *hexadecimal = NULL, *number = NULL;
+	char *a = NULL, *hexanumber = NULL;
+	int i = 0, j = 0, k = 0, base = 16;
+	int number = n;
 
-	while (quotient > 0)
+	while (number > 0)
 	{
-		quotient /= base;
+		number /= base;
 		++i;
 	}
-	number = malloc(sizeof(char) * (1 + i));
-	hexadecimal = malloc(sizeof(char) * (i + 1));
-	if (!hexadecimal || !number)
+	a = malloc(sizeof(char) * (i + 1));
+	hexanumber = malloc(sizeof(char) * (i + 1));
+	if (!hexanumber || !a)
 	{
-		free(number);
-		free(hexadecimal);
+		free(a);
+		free(hexanumber);
 		return (NULL);
 	}
-	i = 0, k = 0, quotient = n;
-	while (quotient > 0)
+	i = 0, k = 0, number = n;
+	while (number > 0)
 	{
-		number[i] = quotient % base + 48;
-		if (quotient % base > 9)
-			number[i] = quotient % base + 48 + 39;
-		quotient /= base;
+		a[i] = number % base + 48;
+		if (number % base > 9)
+			a[i] = number % base + 48 + 7;
+		number /= base;
 		++i;
 	}
 	for (j = i - 1; j >= 0; j--, k++)
 	{
-		hexadecimal[k] = number[k];
+		hexanumber[k] = a[j];
 	}
-	hexadecimal[i] = '\0';
-	return (hexadecimal);
+	hexanumber[k] = '\0';
+	return (hexanumber);
 }
