@@ -24,8 +24,11 @@ int _printf(const char *format, ...)
 	{
 		free(buffer);
 	}
-	for (i = 0; format[i] != '\0'; i++)
+	if (!format)
+		return(-1);
+	for (i = 0; format[i]; i++)
 	{
+		
 		for (Cmatch = 0; match[Cmatch].flag != '\0'; Cmatch++)
 		{
 			if (format[i] == '%' && format[i + 1] == match[Cmatch].flag)
@@ -35,7 +38,7 @@ int _printf(const char *format, ...)
 					buffer[final_c] = ch[m];
 				break;
 			}
-			if (format[i] == '%' && format[i + 1] == '%')
+			else if (format[i] == '%' && format[i + 1] == '%')
 			{
 				i++, final_c++;
 			}
