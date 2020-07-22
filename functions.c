@@ -24,5 +24,7 @@ char *print_string(va_list a)
 	char *x = NULL;
 
 	x = va_arg(a, char *);
+	if (x == NULL)
+		return ("(null)");
 	return (x);
 }
