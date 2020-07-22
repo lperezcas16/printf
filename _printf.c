@@ -31,15 +31,12 @@ int _printf(const char *format, ...)
 			if (format[i] == '%' && format[i + 1] == match[Cmatch].flag)
 			{
 				i++, ch = match[Cmatch].prin_fun(args);
-				if (!ch)
-					final_c++;
-				for (m = 0; ch[m]; m++, final_c++)
-						buffer[final_c] = ch[m];
+				for (m = 0; ch[m]; m++)
+					buffer[final_c] = ch[m], final_c++;
 				break;
 			}
 			else if (format[i] == '%' && format[i + 1] == '%')
 				i++;
-			
 		}
 		if (format[i] != match[Cmatch].flag)
 			buffer[final_c] = format[i], final_c++;
