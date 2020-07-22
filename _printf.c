@@ -21,9 +21,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	buffer = calloc(2048, 1);
 	if (buffer == NULL)
-	{
 		free(buffer);
-	}
 	if (!format)
 		return (-1);
 	for (i = 0; format[i]; i++)
@@ -33,14 +31,15 @@ int _printf(const char *format, ...)
 			if (format[i] == '%' && format[i + 1] == match[Cmatch].flag)
 			{
 				i++, ch = match[Cmatch].prin_fun(args);
+				if (!ch)
+					final_c++;
 				for (m = 0; ch[m]; m++, final_c++)
-					buffer[final_c] = ch[m];
+						buffer[final_c] = ch[m];
 				break;
 			}
 			else if (format[i] == '%' && format[i + 1] == '%')
-			{
-				i++, final_c++;
-			}
+				i++;
+			
 		}
 		if (format[i] != match[Cmatch].flag)
 			buffer[final_c] = format[i], final_c++;
