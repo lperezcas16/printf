@@ -25,10 +25,9 @@ int _printf(const char *format, ...)
 		free(buffer);
 	}
 	if (!format)
-		return(-1);
+		return (-1);
 	for (i = 0; format[i]; i++)
 	{
-		
 		for (Cmatch = 0; match[Cmatch].flag != '\0'; Cmatch++)
 		{
 			if (format[i] == '%' && format[i + 1] == match[Cmatch].flag)
