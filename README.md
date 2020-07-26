@@ -1,14 +1,14 @@
 #                                   _printf
 
 ## Resources :books:
-Read or watch
+ Read or watch
 * [Secrets of "printf."](https://www.cypress.com/file/54761/download)
 * [Secrets of printf(): C Programming.](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s)
 * [How to write C functions with variable argument lists..](https://www.youtube.com/watch?v=S-ak715zIIE)
 ---
 ## Compilation :computer:
 
-The code will be compiled this way:
+ The code will be compiled this way:
 
 ```bash
 $ gcc -Wall -Werror -Wextra -pedantic *.c
@@ -16,13 +16,13 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ---
 ## Usage :mag_right:
 
-You can use the prototype:
+ You can use the prototype:
 ```c
-int _printf(const char *format, ...).
+ int _printf(const char *format, ...).
 ```
-The flags that  you can use whit the _printf:
+ The flags that  you can use whit the _printf:
 
-Flag   | Action
+ FLAG   | ACTION
 ------------- | -------------
   %c  | Prints a Character
   %d - %i | Prints an Integer
