@@ -2,7 +2,7 @@
 
 ## Resources :books:
 Read or watch
-* [Secrets of "printf"](https://www.cypress.com/file/54761/download) 
+* [Secrets of "printf"](https://www.cypress.com/file/54761/download)
 * [Secrets of printf(): C Programming](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s)
 * [How to write C functions with variable argument lists.](https://www.youtube.com/watch?v=S-ak715zIIE)
 ---
@@ -54,7 +54,7 @@ Output
 String:[I am a string !]
 ```
 
-Integer - unsigned int - double 
+Integer - unsigned int - double
 ```C
 _printf("Numbers: [%i] [%d] [%u] ", 1, 2, 3);
 ```
@@ -63,15 +63,10 @@ Output
 Numbers: [1] [2] [3]
 ```
 
-	
+
 
 ---
 
   ### Authors
-  * **Valeria Trujillo** - [valeria2426](https://github.com/valeria2426) :sunflower:
+  * **Valeria Trujillo Rodriguez** - [valeria2426](https://github.com/valeria2426) :sunflower:
   * **Laura Perez** - [Lperezcas16](https://github.com/lperezcas16) :cat:
-
-
-
-
-
