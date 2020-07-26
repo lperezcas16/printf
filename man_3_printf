@@ -24,11 +24,11 @@ FORMAT controls the output:
 
 %u - Prints an unsigned data
 
-%o - Prints an unsigned octal
+%o - prints an unsigned octal
 
-%X - Prints an unsigned hexadecimal in upper case
+%X - prints an unsigned hexadecimal in upper case
 
-%x - Prints an unsigned hexadecimal in lower case
+%x - prints an unsigned hexadecimal in lower case
 
 %r - Prints a reverse string
 
@@ -38,12 +38,12 @@ FORMAT controls the output:
 
 %b - Convert to bynari format
 
-.SH RETURN
+.SH RETURN.
 .PP
-when all is right, the funtion return the number of chars printed
+When all is right, The Funtion Return The Number of Chars Printed
 
-.SH SEE ALSO
-.PP
+.SH SEE ALSO.
+.PP.
 printf (3)
 .SH EXAMPLES
 .PP
@@ -70,9 +70,9 @@ _printf("Percent:[%%]\n");
 _printf("Len:[%d]\n", len);
 .PP
 _printf("Unknown:[%r]\n");
-.PP
+.PP.
 report problems to 1995@holbertonschool.com or 1960@holbertonschool.com
-.SH AUTHORS
-written by Valeria Trujillo Rodriguez and Laura Perez Castillo
+.SH AUTHORS:
+written by Valeria Trujillo Rodriguez and Laura Perez Castillo.
 .SH COPYRIGHT
 Copyright © 2020 Holberton School. This is free Software : you are free to change and redistribute it.
