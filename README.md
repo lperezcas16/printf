@@ -67,6 +67,6 @@ Numbers: [1] [2] [3]
 
 ---
 
-  ### Authors
+  ### AUTHORS
   * **Valeria Trujillo Rodriguez** - [valeria2426](https://github.com/valeria2426) :sunflower:
   * **Laura Perez** - [Lperezcas16](https://github.com/lperezcas16) :cat:
