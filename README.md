@@ -1,6 +1,6 @@
 #                                   _printf
 
-## Resources :books:
+## RESOURCES :books:
  Read or watch
 * [Secrets of "printf."](https://www.cypress.com/file/54761/download)
 * [Secrets of printf(): C Programming.](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s)
