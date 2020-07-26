@@ -1,6 +1,6 @@
 .TH _printf 1 "21/07/2020" " version 1.0"
 .SH NAME
-_printf - My own printf
+_printf - My Own printf
 .SH SYNOPSIS
 .PP
  int _printf(const char *format, ...);
@@ -12,19 +12,19 @@ _printf - My own printf
 
 FORMAT Controls The Output:
 
-%c - Prints a character
+%c - Prints a Character
 
 %s - Prints a String
 
 %% - Prints the Character %
 
-%i - prints an integer
+%i - prints an Integer
 
-%d - prints an integer
+%d - prints an Integer
 
-%u - prints an unsigned data
+%u - prints an unsigned Data
 
-%o - prints an unsigned octal
+%o - prints an unsigned Octal
 
 %X - prints an unsigned Hexadecimal in upper case
 
@@ -73,6 +73,6 @@ _printf("Unknown:[%r]\n");
 .PP.
 report problems to 1995@holbertonschool.com or 1960@holbertonschool.com
 .SH AUTHORS:
-written by Valeria Trujillo Rodriguez and Laura Perez Castillo.
+Written by Valeria Trujillo Rodriguez and Laura Perez Castillo.
 .SH COPYRIGHT
-Copyright © 2020 Holberton School. This is free Software : you are free to change and redistribute it.
+Copyright © 2020 Holberton School. This is Free Software : You are Free To Change and redistribute it.
