@@ -1,6 +1,6 @@
  .TH _printf 1 "21/07/2020" " version 1.0"
  .SH NAME
- _printf - MY OWN PRINTf
+ _printf - MY OWN PRINTF
  .SH SYNOPSIS
  .PP
  int _printf(const char *format, ...);
