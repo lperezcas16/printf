@@ -8,39 +8,39 @@ _printf - My own printf
 
 .SH DESCRIPTION
 .PP
-.B A function that produces output according to a different formats.
+.B A Function That Produces Output According To a Different Formats.
 
-FORMAT controls the output:
+FORMAT Controls The Output:
 
 %c - Prints a character
 
-%s - Prints a string
+%s - Prints a String
 
-%% - Prints the character %
+%% - Prints the Character %
 
-%i - Prints an integer
+%i - prints an integer
 
-%d - Prints an integer
+%d - prints an integer
 
-%u - Prints an unsigned data
+%u - prints an unsigned data
 
 %o - prints an unsigned octal
 
-%X - prints an unsigned hexadecimal in upper case
+%X - prints an unsigned Hexadecimal in upper case
 
-%x - prints an unsigned hexadecimal in lower case
+%x - prints an unsigned Hexadecimal in lower case
 
-%r - Prints a reverse string
+%r - Prints a Reverse String
 
-%R - Conver to Rot13 format
+%R - Conver to Rot13 Format
 
-%o - Convert to octal format
+%o - Convert to Octal Format
 
-%b - Convert to bynari format
+%b - Convert to Bynari Format
 
 .SH RETURN.
 .PP
-When all is right, The Funtion Return The Number of Chars Printed
+When All is Right, The Funtion Return The Number of Chars Printed
 
 .SH SEE ALSO.
 .PP.
