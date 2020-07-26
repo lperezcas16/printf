@@ -12,35 +12,35 @@ _printf - My Own printf
 
 FORMAT Controls The Output:
 
-%c - Prints a Character
+%c - Prints a Character.
 
-%s - Prints a String
+%s - Prints a String.
 
-%% - Prints the Character %
+%% - Prints the Character %.
 
-%i - prints an Integer
+%i - prints an Integer.
 
-%d - prints an Integer
+%d - prints an Integer.
 
-%u - prints an unsigned Data
+%u - prints an unsigned Data.
 
-%o - prints an unsigned Octal
+%o - prints an unsigned Octal.
 
-%X - prints an unsigned Hexadecimal in upper case
+%X - prints an unsigned Hexadecimal in upper case.
 
-%x - prints an unsigned Hexadecimal in lower case
+%x - prints an unsigned Hexadecimal in lower case.
 
-%r - Prints a Reverse String
+%r - Prints a Reverse String.
 
-%R - Conver to Rot13 Format
+%R - Conver to Rot13 Format.
 
-%o - Convert to Octal Format
+%o - Convert to Octal Format.
 
-%b - Convert to Bynari Format
+%b - Convert to Bynari Format.
 
 .SH RETURN.
 .PP
-When All is Right, The Funtion Return The Number of Chars Printed
+When All is Right, The Funtion Return The Number of Chars Printed.
 
 .SH SEE ALSO.
 .PP.
@@ -75,4 +75,4 @@ report problems to 1995@holbertonschool.com or 1960@holbertonschool.com
 .SH AUTHORS:
 Written by Valeria Trujillo Rodriguez and Laura Perez Castillo.
 .SH COPYRIGHT
-Copyright © 2020 Holberton School. This is Free Software : You are Free To Change and redistribute it.
+Copyright © 2020 Holberton School. This is Free Software : You are Free To Change and redistribute it..
