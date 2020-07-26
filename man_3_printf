@@ -10,7 +10,7 @@
  .PP
  .B A Function That Produces Output According To a Different Formats.
 
- FORMAT Controls The Output:
+ FORMAT CONTROLS THE OUTPUT:
 
  %c - Prints a Character.
 
