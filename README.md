@@ -36,29 +36,29 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ---
 ## EXAMPLES :floppy_disk:
 
-Char:
+CHAR:
 ```C
 _printf("Character:[%c]\n", 'H');
 ```
-Output:
+OUTPUT:
 ```C
-Character:[H]
+CHARACTER:[H]
 ```
 
-String:
+STRING:
 ```C
 _printf("String:[%s]\n", "I am a string !");
 ```
-Output
+OUTPUT
 ```C
 String:[I am a string !]
 ```
 
-Integer - unsigned int - double
+INTEGER - unsigned int - double
 ```C
 _printf("Numbers: [%i] [%d] [%u] ", 1, 2, 3);
 ```
-Output
+OUTPUT
 ```C
 Numbers: [1] [2] [3]
 ```
