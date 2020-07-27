@@ -1,78 +1,77 @@
- .TH _printf 1 "21/07/2020" " version 1.0"
- .SH NAME
- _printf - MY OWN PRINTF
- .SH SYNOPSIS
- .PP
- int _printf(const char *format, ...);
+.TH _printf 1 "21/07/2020" " version 1.0"
+.SH NAME
+_printf - MY OWN PRINTF
+.SH SYNOPSIS
+.PP
+int _printf(const char *format, ...);
 
 
- .SH DESCRIPTION
- .PP
- .B A FUNCTION THAT PRODUCES OUTPUT ACCORDING TO A DIFFERENT FORMATS.
+.SH DESCRIPTION
+.PP
+.B A FUNCTION THAT PRODUCES OUTPUT ACCORDING TO A DIFFERENT FORMATS.
+FORMAT CONTROLS THE OUTPUT:
 
- FORMAT CONTROLS THE OUTPUT:
+%c - Prints a Character.
 
- %c - Prints a Character.
+%s - Prints a String.
 
- %s - Prints a String.
+%% - Prints the Character %.
 
- %% - Prints the Character %.
+%i - prints an Integer.
 
- %i - prints an Integer.
+%d - prints an Integer.
 
- %d - prints an Integer.
+%u - prints an unsigned Data.
 
- %u - prints an unsigned Data.
+%o - prints an unsigned Octal.
 
- %o - prints an unsigned Octal.
+%X - prints an unsigned Hexadecimal in upper case.
 
- %X - prints an unsigned Hexadecimal in upper case.
+%x - prints an unsigned Hexadecimal in lower case.
 
- %x - prints an unsigned Hexadecimal in lower case.
+%r - Prints a Reverse String.
 
- %r - Prints a Reverse String.
+%R - Conver to Rot13 Format.
 
- %R - Conver to Rot13 Format.
+%o - Convert to Octal Format.
 
- %o - Convert to Octal Format.
+%b - Convert to Bynari Format.
 
- %b - Convert to Bynari Format.
+.SH RETURN.
+.PP
+WHEN ALL IS  RIGHT, THE  fUNCTION RETURN THE  NUMBER OF CHARS PRINTED.
 
- .SH RETURN.
- .PP
- WHEN ALL IS  RIGHT, THE  fUNCTION RETURN THE  NUMBER OF CHARS PRINTED.
-
- .SH SEE ALSO.
- .PP.
-  printf (3)
- .SH EXAMPLES
- .PP
- _printf("Length:[%d, %i]\n", len, len);
- .PP
- _printf("Negative:[%d]\n", -762534);
- .PP
- _printf("Unsigned:[%u]\n", ui);
- .PP
- _printf("Unsigned octal:[%o]\n", ui);
- .PP
- _printf("Hexa 100: %x", 100);
- .PP
- _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
- .PP
- _printf("Character:[%c]\n", 'H');
- .PP
- _printf("String:[%s]\n", "I am a string !");
- .PP
- _printf("Address:[%p]\n", addr);
- .PP
- _printf("Percent:[%%]\n");
- .PP
- _printf("Len:[%d]\n", len);
- .PP
- _printf("Unknown:[%r]\n");
- .PP.
+.SH SEE ALSO.
+.PP.
+printf (3)
+.SH EXAMPLES
+.PP
+_printf("Length:[%d, %i]\n", len, len);
+.PP
+_printf("Negative:[%d]\n", -762534);
+.PP
+_printf("Unsigned:[%u]\n", ui);
+.PP
+_printf("Unsigned octal:[%o]\n", ui);
+.PP
+_printf("Hexa 100: %x", 100);
+.PP
+_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+.PP
+_printf("Character:[%c]\n", 'H');
+.PP
+_printf("String:[%s]\n", "I am a string !");
+.PP
+_printf("Address:[%p]\n", addr);
+.PP
+_printf("Percent:[%%]\n");
+.PP
+_printf("Len:[%d]\n", len);
+.PP
+_printf("Unknown:[%r]\n");
+.PP.
 REPORT PROBLEMS TO: 1995@holbertonschool.com or 1960@holbertonschool.com.
- .SH AUTHORS:
- WRITTEN BY: Valeria Trujillo Rodriguez, and Laura Perez Castillo.
- .SH COPYRIGHT
- Copyright © 2020 Holberton School. This is Free Software : You are Free To Change and redistribute it..
+.SH AUTHORS:
+WRITTEN BY: Valeria Trujillo Rodriguez, and Laura Perez Castillo.
+.SH COPYRIGHT
+Copyright © 2020 Holberton School. This is Free Software : You are Free To Change and redistribute it..
