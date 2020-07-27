@@ -19,7 +19,6 @@ int str_ln(char *p)
  * @s:string to reverse
  * Return: the string reverser
  */
-
 void rev_string(char *s)
 {
 	int  back, front, len;
