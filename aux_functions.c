@@ -30,9 +30,9 @@ void rev_string(char *s)
 	back = len - 1;
 	while (back >= len / 2)
 	{
-		aux = *(s + front);
-		*(s + front) = *(s + back);
-		*(s + back) = aux;
+		aux = s[front];
+		s[front] = s[back];
+		s[back] = aux;
 		back--;
 		front++;
 	}

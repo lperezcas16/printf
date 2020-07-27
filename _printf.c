@@ -38,6 +38,8 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i] == '%' && format[i + 1] == '%')
 				i++;
+			else if (format[i] == '%')
+				break;
 		}
 		if (format[i] != match[Cmatch].flag)
 			buffer[final_c] = format[i], final_c++;
