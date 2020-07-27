@@ -15,7 +15,7 @@ int str_ln(char *p)
 	return (i);
 }
 
-/** 
+/**
  * rev_string - reverse a string
  * @s:string to reverse
  * Return: the string reverser
