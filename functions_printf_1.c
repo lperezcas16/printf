@@ -11,7 +11,6 @@ char *print_octal(va_list a)
 	char *ptn = return_octal(va_arg(a, int));
 
 	return (ptn);
-	
 }
 /**
 *return_octal - Return the decimal in octal

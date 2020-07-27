@@ -11,7 +11,6 @@ char *print_Hexa(va_list a)
 	char *ptn = return_Hexa(va_arg(a, int));
 
 	return (ptn);
-	
 }
 /**
 *return_Hexa - convert a decimal in to hexadecimal

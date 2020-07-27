@@ -10,8 +10,7 @@ char *print_binary(va_list a)
 {
 	int i = va_arg(a, int);
 
-	return(convertBase(i, 2));
-
+	return (convertBase(i, 2));
 }
 /**
 *print_hexa - Print the hexadecimal
@@ -24,6 +23,6 @@ char *print_hexa(va_list a)
 {
 	int i = va_arg(a, int);
 
-	return(convertBase(i, 16));
+	return (convertBase(i, 16));
 }
 
