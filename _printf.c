@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	print match[] = {{'c', print_char}, {'s', print_string},
 		{'d', print_int}, {'i', print_int},
 		{'u', print_unsign_int},
-		/*{'o', print_octal}, {'x', print_hexa},*/
-		/*{'b', print_binary}, {'X', print_Hexa},*/
+		{'o', print_octal}, {'x', print_hexa},
+		{'b', print_binary}, {'X', print_Hexa},
 		{'\0', NULL}
 			};
 	va_start(args, format);

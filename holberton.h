@@ -19,7 +19,7 @@ typedef struct prnt
 } print;
 int str_ln(char *p);
 void rev_string(char *s);
-char *converToStrBase(int number, unsigned int base);
+char *convertBase(int number, unsigned int base);
 int _printf(const char *format, ...);
 char *return_binary(int n);
 char *print_char(va_list a);
