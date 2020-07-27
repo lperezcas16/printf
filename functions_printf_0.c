@@ -11,6 +11,7 @@ char *print_binary(va_list a)
 	char *ptn = return_binary(va_arg(a, int));
 
 	return (ptn);
+	
 }
 /**
 *return_binary - Return the decimal in to binary number

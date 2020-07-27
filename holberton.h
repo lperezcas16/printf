@@ -17,6 +17,7 @@ typedef struct prnt
 	char flag;
 	char* (*prin_fun)(va_list);
 } print;
+
 int str_ln(char *p);
 void rev_string(char *s);
 char *converToStrBase(int number, unsigned int base);
