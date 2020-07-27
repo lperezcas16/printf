@@ -1,14 +1,14 @@
 #                                   _printf
 
-## Resources :books:
-Read or watch
-* [Secrets of "printf"](https://www.cypress.com/file/54761/download) 
-* [Secrets of printf(): C Programming](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s)
-* [How to write C functions with variable argument lists.](https://www.youtube.com/watch?v=S-ak715zIIE)
+## RESOURCES :books:
+ Read or watch
+* [Secrets of "printf."](https://www.cypress.com/file/54761/download)
+* [Secrets of printf(): C Programming.](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s)
+* [How to write C functions with variable argument lists..](https://www.youtube.com/watch?v=S-ak715zIIE)
 ---
 ## Compilation :computer:
 
-The code will be compiled this way:
+ The code will be compiled this way:
 
 ```bash
 $ gcc -Wall -Werror -Wextra -pedantic *.c
@@ -16,62 +16,57 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ---
 ## Usage :mag_right:
 
-You can use the prototype:
+ You can use the prototype:
 ```c
-int _printf(const char *format, ...)
+ int _printf(const char *format, ...).
 ```
-The flags that  you can use whit the _printf:
+ The flags that  you can use whit the _printf:
 
-Flag   | Action
+ FLAG   | ACTION
 ------------- | -------------
   %c  | Prints a Character
   %d - %i | Prints an Integer
-  %b  | Prints a Binary
-  %u  | Prints an Unsigned Integer
-  %o  | Prints an Octal representaction of integer
-  %x  | Prints a Hexadecimal representation of unsigned integer \(lower case\)
-  %X  | Prints a Hexadecimal representation of unsigned integer \(upper case\)
-  %s  | Print a String
+  %b  | Prints a Binary.
+  %u  | Prints an Unsigned Integer.
+  %o  | Prints an Octal representaction of integer.
+  %x  | Prints a Hexadecimal representation of unsigned integer \(lower case\).
+  %X  | Prints a Hexadecimal representation of unsigned integer \(upper case\).
+  %s  | Print a String.
 
 ---
 ## EXAMPLES :floppy_disk:
 
-Char:
+CHAR:
 ```C
 _printf("Character:[%c]\n", 'H');
 ```
-Output:
+OUTPUT:
 ```C
-Character:[H]
+CHARACTER:[H]
 ```
 
-String:
+STRING:
 ```C
 _printf("String:[%s]\n", "I am a string !");
 ```
-Output
+OUTPUT
 ```C
 String:[I am a string !]
 ```
 
-Integer - unsigned int - double 
+INTEGER - unsigned int - double
 ```C
 _printf("Numbers: [%i] [%d] [%u] ", 1, 2, 3);
 ```
-Output
+OUTPUT
 ```C
 Numbers: [1] [2] [3]
 ```
 
-	
+
 
 ---
 
-  ### Authors
-  * **Valeria Trujillo** - [valeria2426](https://github.com/valeria2426) :sunflower:
+  ### AUTHORS
+  * **Valeria Trujillo Rodriguez** - [valeria2426](https://github.com/valeria2426) :sunflower:
   * **Laura Perez** - [Lperezcas16](https://github.com/lperezcas16) :cat:
-
-
-
-
-
