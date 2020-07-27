@@ -14,7 +14,8 @@ int str_ln(char *p)
 		i++, p++;
 	return (i);
 }
-/**
+
+/** 
  * rev_string - reverse a string
  * @s:string to reverse
  * Return: the string reverser
@@ -37,14 +38,14 @@ void rev_string(char *s)
 	}
 }
 /**
- * converToStrBase - converts a int
+ * convertBase - converts a int
  * into a string with a specificl base
  * @number: the number to convert
  * @base: the base to convert the number to (max base = 16)
  * Return: a pointer to the converted string
  */
 
-char *converToStrBase(int number, unsigned int base)
+char *convertBase(int number, unsigned int base)
 {
 	char *dict = "0123456789abcdef";
 	int i = 0, negative = 0;

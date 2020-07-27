@@ -37,9 +37,7 @@ char *print_int(va_list a)
 {
 	int i = va_arg(a, int);
 
-	if (i)
-		return (converToStrBase(i, 10));
-	return (NULL);
+	return (convertBase(i, 10));
 }
 /**
  * print_unsign_int - print_string
@@ -50,8 +48,12 @@ char *print_unsign_int(va_list a)
 {
 	int i = va_arg(a, int);
 
+<<<<<<< HEAD
 	if (i)
 		return (converToStrBase(i, 10));
 	return (NULL);
 	
+=======
+	return (convertBase(i, 10));
+>>>>>>> bd6ac940fc015db2139d7b2a0ceac36c288f3a3e
 }
