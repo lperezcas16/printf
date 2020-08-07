@@ -1,3 +1,4 @@
+![alt text](https://scontent-bog1-1.xx.fbcdn.net/v/t31.0-8/15895760_151281118695162_1528974156724834621_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=j_V4SF8xqHoAX8RkYke&_nc_ht=scontent-bog1-1.xx&oh=7c51974b64ff584e482d2f52fd996e5a&oe=5F51501C)
 # _printf
 This project contains a mini version of the printf function that we can find in the library <stdio.h>, if we are using the C programming language. The printf function basically allows us to print any argument given to standard or terminal output. This means that we can print any combination of strings, integers, and other different data type
 ## RESOURCES :books:
